@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>2828电影网 - 高清影视在线观看_每日更新电影剧集排行榜</title>
+<meta name="description" content="2828电影网(2828dianyingwang.cn)每日更新最新电影、热播剧集、动漫、综艺与短剧，提供剧情介绍、片单分区、观看指南与影视排行榜，手机端自适应，在线观看导航。">
+<meta name="keywords" content="2828电影网,2828电影网在线观看,2828影视,最新电影,热播剧集,动漫综艺短剧,影视排行榜,高清在线观看">
+<meta name="author" content="2828电影网">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#ff2d78">
+<link rel="canonical" href="https://www.2828dianyingwang.cn/">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<meta property="og:site_name" content="2828电影网">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2828电影网 - 高清影视在线观看">
+<meta property="og:description" content="2828电影网每日更新最新电影、热播剧集、动漫、综艺与短剧，提供剧情介绍与影视排行榜。">
+<meta property="og:url" content="https://www.2828dianyingwang.cn/">
+<meta property="og:image" content="https://www.2828dianyingwang.cn/favicon.ico">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2828电影网">
+<meta name="twitter:description" content="最新电影、热播剧集、动漫综艺短剧，每日上新，手机端自适应。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{
+  --bg:#0c1018;--bg2:#111725;--panel:#141c2b;--panel2:#1a2333;
+  --silver:#e8eef7;--txt:#eaf0fa;--dim:#8c9bb3;--faint:#5b6b84;
+  --mag:#ff2d78;--cyan:#00d4e0;--violet:#8b5cf6;--blue:#2f6bff;--gold:#ffb020;--leaf:#3ecf8e;
+  --line:rgba(232,238,247,.14);
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --mono:"Courier New",Courier,Menlo,Consolas,monospace;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.76;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative
+}
+body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.4;
+  background-image:
+    linear-gradient(90deg,rgba(255,45,120,.08) 0 1px,transparent 1px 48px),
+    linear-gradient(90deg,rgba(0,212,224,.08) 0 1px,transparent 1px 48px)}
+body:after{content:"";position:fixed;left:-10%;right:-10%;top:-26%;height:66%;z-index:0;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 100%,rgba(255,45,120,.13),rgba(0,212,224,.08) 54%,transparent 76%)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px;position:relative;z-index:3}
+main,header,footer{position:relative;z-index:3}
+
+/* ============ 顶栏 ============ */
+.axisbar{display:block;height:10px;position:relative;overflow:hidden;
+  background:linear-gradient(90deg,var(--cyan),var(--violet) 26%,var(--bg) 48%,var(--bg) 52%,var(--violet) 74%,var(--cyan))}
+.axisbar:after{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:var(--silver);
+  box-shadow:0 0 10px rgba(232,238,247,.9)}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(12,16,24,.95);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:60px}
+.logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.logo .mark{
+  flex:0 0 auto;position:relative;width:46px;height:30px;border:1px solid rgba(232,238,247,.5);
+  display:flex;overflow:hidden;background:var(--bg2)
+}
+.logo .mark:before{content:"2828";flex:1;font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--silver);
+  display:grid;place-items:center;letter-spacing:-.5px}
+.logo .mark:after{content:"2828";flex:1;font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--mag);
+  display:grid;place-items:center;transform:scaleX(-1);letter-spacing:-.5px}
+.logo .mark i{position:absolute;left:50%;top:0;bottom:0;width:1px;margin-left:-.5px;background:var(--silver);opacity:.7}
+.logo b{font-size:21px;font-weight:800;letter-spacing:1px;display:block;line-height:1.15;white-space:nowrap}
+.logo b i{font-style:normal;color:var(--mag)}
+.logo small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:1.6px;color:var(--faint)}
+.nav{display:flex;gap:2px;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-size:14px;white-space:nowrap;padding:8px 13px;color:var(--dim);transition:.22s}
+.nav a:hover{color:var(--txt)}
+.nav a.on{color:var(--cyan);font-weight:700}
+.nav a.on:after{content:"";display:block;height:2px;margin-top:4px;
+  background:linear-gradient(90deg,var(--cyan),var(--mag))}
+.nav-btn{display:none;flex:0 0 auto;padding:8px 14px;cursor:pointer;border:0;color:var(--bg);
+  background:linear-gradient(90deg,var(--cyan),var(--mag));font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:1px}
+
+/* ============ 首屏：回文镜 ============ */
+.hero{padding:26px 0 6px}
+.hall{
+  max-width:920px;margin:0 auto;background:var(--panel);border:1px solid var(--line);
+  display:grid;grid-template-columns:1fr 268px;gap:22px;padding:24px 26px 26px;position:relative;overflow:hidden
+}
+.hall:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;margin-left:-.5px;
+  background:linear-gradient(180deg,transparent,rgba(232,238,247,.16) 22%,rgba(232,238,247,.16) 78%,transparent);
+  pointer-events:none;opacity:.5}
+.hall:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:
+    linear-gradient(112deg,rgba(232,238,247,.05) 0 1px,transparent 1px 16px),
+    linear-gradient(-112deg,rgba(232,238,247,.05) 0 1px,transparent 1px 16px)}
+.mir{position:relative;z-index:3;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;
+  letter-spacing:2px;color:var(--cyan);border:1px solid rgba(0,212,224,.45);padding:5px 12px;background:rgba(0,212,224,.08)}
+.mir i{width:9px;height:9px;display:block;background:var(--cyan);transform:rotate(45deg);
+  animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:rotate(45deg) scale(1)}55%{opacity:.35;transform:rotate(45deg) scale(.7)}}
+h1{font-size:clamp(25px,5.8vw,40px);line-height:1.32;font-weight:800;letter-spacing:1px;margin-top:14px;position:relative;z-index:3}
+h1 i{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--mag));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+h1 small{display:block;font-size:14.5px;font-weight:400;letter-spacing:.4px;color:var(--dim);margin-top:12px;line-height:2}
+.search{margin-top:18px;display:flex;align-items:stretch;border:1px solid var(--silver);background:var(--bg2);
+  position:relative;z-index:3;overflow:hidden}
+.search input{flex:1;min-width:0;height:46px;border:0;outline:none;background:transparent;padding:0 15px;font-size:14.5px;color:var(--txt)}
+.search input::placeholder{color:var(--faint)}
+.search button{flex:0 0 auto;border:0;cursor:pointer;height:46px;padding:0 26px;font-family:var(--mono);font-size:13px;
+  font-weight:700;letter-spacing:2px;color:var(--bg);background:linear-gradient(90deg,var(--cyan),var(--mag))}
+
+/* 回文镜 */
+.mirror{position:relative;height:270px;justify-self:center;width:100%;max-width:268px;z-index:3}
+.mirror .frame{
+  position:absolute;inset:0;border:2px solid rgba(232,238,247,.6);
+  box-shadow:0 0 0 1px rgba(12,16,24,1),0 18px 40px rgba(0,0,0,.55),inset 0 0 40px rgba(232,238,247,.08)
+}
+.mirror .frame:before,.mirror .frame:after{content:"";position:absolute;width:16px;height:16px;border:2px solid var(--cyan)}
+.mirror .frame:before{left:-2px;top:-2px;border-right:0;border-bottom:0}
+.mirror .frame:after{right:-2px;bottom:-2px;border-left:0;border-top:0}
+.mirror .glass{
+  position:absolute;inset:6px;overflow:hidden;
+  background:linear-gradient(160deg,#1b2536,#0d1220 58%,#161f2f)
+}
+.mirror .glass:before{content:"";position:absolute;inset:0;opacity:.55;
+  background-image:
+    linear-gradient(112deg,rgba(232,238,247,.12) 0 2px,transparent 2px 18px),
+    linear-gradient(-112deg,rgba(232,238,247,.12) 0 2px,transparent 2px 18px)}
+.mirror .glass:after{content:"";position:absolute;inset:-40%;
+  background:linear-gradient(76deg,transparent 40%,rgba(255,255,255,.22) 50%,transparent 60%);
+  animation:sweep 6.5s ease-in-out infinite}
+@keyframes sweep{0%{transform:translateX(-60%)}55%,100%{transform:translateX(60%)}}
+.mirror .axis{position:absolute;left:50%;top:6px;bottom:6px;width:1px;margin-left:-.5px;z-index:4;
+  background:linear-gradient(180deg,transparent,rgba(232,238,247,.85) 18%,rgba(232,238,247,.85) 82%,transparent);
+  box-shadow:0 0 12px rgba(232,238,247,.6)}
+.mirror .half{
+  position:absolute;top:6px;bottom:6px;width:50%;z-index:5;display:grid;place-items:center;overflow:hidden
+}
+.mirror .half.l{left:6px}
+.mirror .half.r{right:6px}
+.mirror .half b{font-family:var(--mono);font-size:34px;font-weight:700;letter-spacing:1px;line-height:1;white-space:nowrap}
+.mirror .half.l b{color:var(--silver);text-shadow:0 0 18px rgba(232,238,247,.45)}
+.mirror .half.r b{color:var(--mag);text-shadow:0 0 18px rgba(255,45,120,.5);transform:scaleX(-1)}
+.mirror .half small{position:absolute;bottom:26px;left:0;right:0;text-align:center;font-family:var(--mono);
+  font-size:9px;letter-spacing:2px;color:var(--faint)}
+.mirror .half.r small{transform:scaleX(-1)}
+.mirror .cap{position:absolute;left:0;right:0;bottom:-22px;text-align:center;font-family:var(--mono);font-size:10px;
+  letter-spacing:2px;color:var(--faint)}
+.tags{margin-top:26px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:12.5px}
+.tags a{display:inline-flex;align-items:center;gap:7px;padding:5px 14px;border:1px solid var(--line);
+  background:var(--panel);color:var(--dim);transition:.22s}
+.tags a:hover{border-color:var(--cyan);color:var(--cyan)}
+.tags a s{width:9px;height:9px;display:block;text-decoration:none;background:var(--cyan);transform:rotate(45deg)}
+.tags a:nth-child(2) s{background:var(--mag)}
+.tags a:nth-child(3) s{background:var(--violet)}
+.tags a:nth-child(4) s{background:var(--blue)}
+.tags a:nth-child(5) s{background:var(--gold)}
+.tags a:nth-child(6) s{background:var(--leaf)}
+.stats{margin:22px auto 0;max-width:780px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stats div{background:var(--panel);border:1px solid var(--line);padding:13px 8px;text-align:center;position:relative;overflow:hidden}
+.stats div:before{content:"";position:absolute;left:0;right:0;top:0;height:2px}
+.stats div:nth-child(1):before{background:var(--cyan)}
+.stats div:nth-child(2):before{background:var(--mag)}
+.stats div:nth-child(3):before{background:var(--violet)}
+.stats div:nth-child(4):before{background:var(--gold)}
+.stats b{display:block;font-family:var(--mono);font-size:19px;font-weight:700}
+.stats div:nth-child(1) b{color:var(--cyan)}
+.stats div:nth-child(2) b{color:var(--mag)}
+.stats div:nth-child(3) b{color:var(--violet)}
+.stats div:nth-child(4) b{color:var(--gold)}
+.stats span{font-family:var(--mono);font-size:10.5px;letter-spacing:1.5px;color:var(--faint)}
+
+/* ============ 区块头 ============ */
+section{padding:40px 0 0}
+.sec-head{display:flex;align-items:center;gap:11px;margin-bottom:18px;flex-wrap:wrap}
+.kno{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;font-weight:700;
+  letter-spacing:1.2px;padding:6px 15px;color:var(--bg);background:linear-gradient(90deg,var(--cyan),var(--mag))
+}
+.kno .mini{position:relative;width:14px;height:12px}
+.kno .mini:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--bg);opacity:.75}
+.kno .mini:after{content:"";position:absolute;right:0;top:0;bottom:0;width:5px;background:var(--bg);opacity:.75}
+.kno em{font-style:normal}
+.kno u{text-decoration:none;color:rgba(12,16,24,.55)}
+h2{font-size:20px;font-weight:800;letter-spacing:1.5px}
+.sec-head .en{font-family:var(--mono);font-size:10.5px;letter-spacing:3px;color:var(--faint)}
+.sec-head .ln{flex:1;min-width:16px;height:9px;
+  background-image:repeating-linear-gradient(90deg,var(--cyan) 0 3px,transparent 3px 7px);opacity:.35}
+.sec-head .more{font-family:var(--mono);font-size:12px;letter-spacing:1px;border:1px solid var(--line);
+  background:var(--panel);padding:6px 15px;transition:.22s}
+.sec-head .more:hover{border-color:var(--cyan);color:var(--cyan)}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:18px;padding-bottom:2px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto;cursor:pointer;font-size:13px;letter-spacing:1px;padding:8px 18px;background:var(--panel);
+  border:1px solid var(--line);color:var(--dim);transition:.22s}
+.tabs button:hover{border-color:var(--cyan);color:var(--cyan)}
+.tabs button.on{background:linear-gradient(90deg,var(--cyan),var(--mag));border-color:transparent;color:var(--bg);font-weight:700}
+
+/* ============ 卡片 ============ */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(178px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);transition:.26s;overflow:hidden;position:relative}
+.card:hover{transform:translateY(-5px);border-color:var(--cyan);box-shadow:0 14px 28px rgba(0,0,0,.45)}
+.card:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;z-index:6;
+  background:linear-gradient(90deg,var(--c1),var(--c2))}
+.card[data-c="1"]{--c1:var(--cyan);--c2:var(--blue)}
+.card[data-c="2"]{--c1:var(--mag);--c2:var(--violet)}
+.card[data-c="3"]{--c1:var(--violet);--c2:var(--blue)}
+.card[data-c="4"]{--c1:var(--blue);--c2:var(--cyan)}
+.card[data-c="5"]{--c1:var(--gold);--c2:var(--mag)}
+.card[data-c="6"]{--c1:var(--leaf);--c2:var(--cyan)}
+.ph{position:relative;aspect-ratio:3/4;margin-top:2px;overflow:hidden;padding:11px;
+  display:flex;align-items:flex-end;color:#fff}
+/* 镜像对称纹 */
+.ph .sym{position:absolute;inset:0;opacity:.55;
+  background-image:
+    linear-gradient(112deg,rgba(255,255,255,.14) 0 2px,transparent 2px 17px),
+    linear-gradient(-112deg,rgba(255,255,255,.14) 0 2px,transparent 2px 17px)}
+.ph .ax{position:absolute;left:50%;top:0;bottom:0;width:1px;margin-left:-.5px;
+  background:linear-gradient(180deg,transparent,rgba(255,255,255,.5) 30%,rgba(255,255,255,.5) 70%,transparent)}
+.ph .halo{position:absolute;left:-20%;top:-24%;width:140%;height:74%;
+  background:radial-gradient(ellipse at 50% 40%,rgba(255,255,255,.2),transparent 66%)}
+.ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 38%,rgba(6,10,16,.86))}
+.ph .t{position:relative;z-index:3;font-size:16.5px;font-weight:800;letter-spacing:1.5px;line-height:1.4;
+  text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.ph .loc{
+  position:absolute;top:10px;left:10px;z-index:4;font-family:var(--mono);font-size:10px;letter-spacing:1px;
+  padding:3px 9px;color:var(--bg);background:var(--silver)
+}
+.card[data-c="2"] .ph .loc{background:var(--mag);color:#fff}
+.card[data-c="3"] .ph .loc{background:var(--violet);color:#fff}
+.card[data-c="4"] .ph .loc{background:var(--blue);color:#fff}
+.card[data-c="5"] .ph .loc{background:var(--gold)}
+.card[data-c="6"] .ph .loc{background:var(--leaf);color:var(--bg)}
+.ph .sc{
+  position:absolute;top:10px;right:10px;z-index:4;font-family:var(--mono);font-size:12px;font-weight:700;
+  padding:3px 8px;color:var(--bg);background:var(--silver)
+}
+.m1{background:linear-gradient(150deg,#0b2b30,#0f6d75 55%,#00d4e0)}
+.m2{background:linear-gradient(150deg,#2c0a1c,#9c1b48 55%,#ff2d78)}
+.m3{background:linear-gradient(150deg,#1b0f36,#5b2fb0 55%,#8b5cf6)}
+.m4{background:linear-gradient(150deg,#071736,#1d47a8 55%,#2f6bff)}
+.m5{background:linear-gradient(150deg,#2e1f04,#9a6a08 55%,#ffb020)}
+.m6{background:linear-gradient(150deg,#06291d,#15895c 55%,#3ecf8e)}
+.cb{padding:11px 12px 14px}
+.cb h3{font-size:15.5px;font-weight:800;letter-spacing:1px;line-height:1.4;
+  display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.cb .meta{font-family:var(--mono);font-size:11px;color:var(--dim);margin-top:3px;
+  display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.cb .note{font-size:12.5px;color:var(--dim);margin-top:8px;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* 中心对称热度条 */
+.cb .foot{display:flex;align-items:center;gap:10px;margin-top:11px;padding-top:10px;border-top:1px dashed var(--line)}
+.symbar{flex:1;height:14px;position:relative;background:var(--bg2);overflow:hidden}
+.symbar:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;margin-left:-.5px;background:var(--faint);opacity:.6}
+.symbar .fill{position:absolute;top:0;bottom:0;left:calc(50% - var(--p) * 1% / 2);width:calc(var(--p) * 1%);
+  background:linear-gradient(90deg,var(--c1),var(--c2));box-shadow:0 0 10px rgba(0,0,0,.4)}
+.symbar:after{content:"";position:absolute;left:0;right:0;top:0;bottom:0;
+  background-image:repeating-linear-gradient(90deg,rgba(12,16,24,.6) 0 1px,transparent 1px 5px)}
+.cb .foot .heat{font-family:var(--mono);font-size:11px;color:var(--faint);flex:0 0 auto;line-height:1.2}
+.cb .foot .heat b{font-size:13px;color:var(--c1)}
+.card.hide{display:none}
+.empty{display:none;padding:28px;text-align:center;font-size:13.5px;color:var(--dim);
+  border:1px dashed var(--line);background:var(--panel)}
+.empty.show{display:block}
+
+/* ============ 今日上新 ============ */
+.log{background:var(--panel);border:1px solid var(--line);overflow:hidden}
+.log .row{
+  display:grid;grid-template-columns:88px 1fr 96px 84px;align-items:center;gap:14px;padding:12px 15px;
+  border-bottom:1px solid var(--line);transition:.2s
+}
+.log .row:last-child{border-bottom:0}
+.log .row:hover{background:var(--panel2)}
+.log .row .tm{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--cyan);letter-spacing:1px}
+.log .row .nm{min-width:0}
+.log .row .nm strong{display:block;font-size:15px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.log .row .nm span{font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+.log .row .tag{font-family:var(--mono);font-size:11px;letter-spacing:1px;padding:3px 10px;text-align:center;
+  color:var(--bg);background:var(--cyan)}
+.log .row .tag.off{background:var(--faint);color:var(--bg)}
+.log .row .go{font-size:12px;color:var(--dim);letter-spacing:1px}
+.log .row:hover .go{color:var(--cyan)}
+
+/* ============ 对照指南 ============ */
+.guide{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.g-item{background:var(--panel);border:1px solid var(--line);padding:18px;position:relative;transition:.26s}
+.g-item:hover{transform:translateY(-5px);border-color:var(--cyan)}
+.g-item .mini{position:relative;width:30px;height:16px;margin-bottom:12px}
+.g-item .mini:before,.g-item .mini:after{content:"";position:absolute;top:0;bottom:0;width:11px}
+.g-item .mini:before{left:0;background:var(--cyan)}
+.g-item .mini:after{right:0;background:var(--mag)}
+.g-item:nth-child(2) .mini:before{background:var(--violet)}
+.g-item:nth-child(2) .mini:after{background:var(--blue)}
+.g-item:nth-child(3) .mini:before{background:var(--gold)}
+.g-item:nth-child(3) .mini:after{background:var(--leaf)}
+.g-item:nth-child(4) .mini:before{background:var(--blue)}
+.g-item:nth-child(4) .mini:after{background:var(--cyan)}
+.g-item b{display:block;font-size:15.5px;font-weight:800}
+.g-item p{font-size:12.5px;color:var(--dim);margin-top:5px;line-height:1.8}
+.g-item ul{margin-top:9px;font-size:12.5px;color:var(--dim);line-height:1.9}
+.g-item li:before{content:"◂ ";color:var(--cyan);font-size:11px}
+.g-item .code{position:absolute;right:14px;top:20px;font-family:var(--mono);font-size:10.5px;letter-spacing:1.5px;color:var(--faint)}
+
+/* ============ 编辑对照 ============ */
+.pick{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.pick-item{background:var(--panel);border:1px solid var(--line);padding:22px;position:relative;transition:.26s;overflow:hidden}
+.pick-item:hover{transform:translateY(-5px);border-color:var(--mag)}
+.pick-item:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--cyan)}
+.pick-item:after{content:"";position:absolute;right:0;top:0;bottom:0;width:2px;background:var(--mag)}
+.pick-item:nth-child(2):before{background:var(--violet)}
+.pick-item:nth-child(2):after{background:var(--blue)}
+.pick-item:nth-child(3):before{background:var(--gold)}
+.pick-item:nth-child(3):after{background:var(--leaf)}
+.pick-item .k{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:2px;padding:4px 11px;
+  border:1px solid var(--cyan);color:var(--cyan)}
+.pick-item:nth-child(2) .k{border-color:var(--violet);color:var(--violet)}
+.pick-item:nth-child(3) .k{border-color:var(--gold);color:var(--gold)}
+.pick-item h3{font-size:18.5px;font-weight:800;letter-spacing:1px;line-height:1.55;margin:13px 0 9px}
+.pick-item p{font-size:13px;color:var(--dim);line-height:1.95}
+.pick-item .go{display:inline-block;margin-top:13px;font-family:var(--mono);font-size:12.5px;letter-spacing:1.5px;color:var(--cyan)}
+.pick-item:nth-child(2) .go{color:var(--violet)}
+.pick-item:nth-child(3) .go{color:var(--gold)}
+.pick-item .go:after{content:" →"}
+
+/* ============ 排行榜 ============ */
+.rank{display:grid;gap:11px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.rank-item{display:flex;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--line);padding:11px 15px;transition:.22s}
+.rank-item:hover{transform:translateX(4px);border-color:var(--cyan)}
+.rank-item .no{
+  flex:0 0 52px;height:36px;display:grid;place-items:center;position:relative;overflow:hidden;
+  font-family:var(--mono);font-size:13px;font-weight:700;color:var(--silver);
+  background:var(--bg2);border:1px solid var(--line)
+}
+.rank-item .no span{position:relative;z-index:2}
+.rank-item .no:after{content:attr(data-n);position:absolute;left:0;right:0;top:0;bottom:0;
+  display:grid;place-items:center;transform:scaleX(-1);opacity:.35;color:var(--mag)}
+.rank-item:nth-child(1) .no{border-color:var(--cyan);color:var(--cyan)}
+.rank-item:nth-child(2) .no{border-color:var(--mag)}
+.rank-item:nth-child(3) .no{border-color:var(--violet);color:var(--violet)}
+.rank-item .info{flex:1;min-width:0}
+.rank-item .info strong{display:block;font-size:15.5px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-item .info span{font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+.rank-item .hot{flex:0 0 auto;text-align:right}
+.rank-item .hot b{display:block;font-family:var(--mono);font-size:14px;color:var(--cyan)}
+.rank-item .hot i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--faint)}
+
+/* ============ 资讯 ============ */
+.news{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.news a{display:flex;gap:13px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:12px;transition:.24s}
+.news a:hover{transform:translateY(-4px);border-color:var(--cyan)}
+.news .thumb{flex:0 0 50px;height:60px;position:relative;background:var(--bg2);border:1px solid var(--line);overflow:hidden}
+.news .thumb:before,.news .thumb:after{content:"";position:absolute;top:0;bottom:0;width:23px}
+.news .thumb:before{left:0;background:linear-gradient(180deg,var(--cyan),transparent)}
+.news .thumb:after{right:0;background:linear-gradient(180deg,var(--mag),transparent)}
+.news a:nth-child(2) .thumb:before{background:linear-gradient(180deg,var(--violet),transparent)}
+.news a:nth-child(2) .thumb:after{background:linear-gradient(180deg,var(--blue),transparent)}
+.news a:nth-child(3) .thumb:before{background:linear-gradient(180deg,var(--gold),transparent)}
+.news a:nth-child(3) .thumb:after{background:linear-gradient(180deg,var(--leaf),transparent)}
+.news a:nth-child(4) .thumb:before{background:linear-gradient(180deg,var(--blue),transparent)}
+.news a:nth-child(4) .thumb:after{background:linear-gradient(180deg,var(--cyan),transparent)}
+.news h3{font-size:14.5px;font-weight:800;line-height:1.5}
+.news p{font-size:12.5px;color:var(--dim);margin-top:3px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.news time{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.feats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:11px}
+.feat{background:var(--panel);border:1px solid var(--line);padding:16px 17px;position:relative;padding-top:24px}
+.feat:before{content:"";position:absolute;left:0;right:0;top:0;height:2px}
+.feat:nth-child(1):before{background:linear-gradient(90deg,var(--cyan),var(--mag))}
+.feat:nth-child(2):before{background:linear-gradient(90deg,var(--violet),var(--blue))}
+.feat:nth-child(3):before{background:linear-gradient(90deg,var(--gold),var(--leaf))}
+.feat:nth-child(4):before{background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.feat b{display:block;font-size:15.5px;font-weight:800}
+.feat p{font-size:13px;color:var(--dim);margin-top:4px}
+
+/* ============ 页脚 ============ */
+footer{margin-top:46px;border-top:1px solid var(--line);padding-top:18px;color:var(--dim);background:var(--panel)}
+footer .f-top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:16px;
+  border-bottom:1px solid var(--line);flex-wrap:wrap}
+footer .f-top b{font-size:23px;font-weight:800;letter-spacing:1.5px;color:var(--txt)}
+footer .f-top b i{font-style:normal;color:var(--mag)}
+footer .f-top p{font-family:var(--mono);font-size:12.5px;letter-spacing:1.5px;color:var(--faint)}
+footer .f-cols{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));padding:24px 0}
+footer h4{font-family:var(--mono);font-size:11.5px;letter-spacing:2.5px;color:var(--cyan);margin-bottom:10px;
+  padding-bottom:8px;border-bottom:1px solid var(--line)}
+footer li{font-size:13.5px;padding:4px 0}
+footer li a:hover{color:var(--cyan)}
+.f-bottom{border-top:1px solid var(--line);padding:16px 0 32px;font-size:12.5px;text-align:center;line-height:2;color:var(--faint)}
+.f-bottom a{color:var(--dim)}
+.f-bottom a:hover{color:var(--cyan)}
+
+#toTop{
+  position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:70;display:none;
+  width:46px;height:46px;border:1px solid var(--line);cursor:pointer;background:var(--panel);color:var(--cyan);font-size:17px
+}
+#toTop.show{display:block}
+#toTop:hover{border-color:var(--cyan)}
+
+.drawer{position:fixed;inset:0;z-index:99;background:rgba(6,10,16,.62);display:none}
+.drawer.open{display:block}
+.drawer .panel{position:absolute;right:0;top:0;bottom:0;width:78%;max-width:290px;background:var(--panel);
+  border-left:1px solid var(--line);padding:20px;overflow:auto}
+.drawer .panel h4{font-family:var(--mono);font-size:10.5px;letter-spacing:2.5px;color:var(--cyan);margin:16px 0 8px;
+  padding-bottom:6px;border-bottom:1px solid var(--line)}
+.drawer .panel a{display:block;padding:11px 14px;font-size:14px;margin-bottom:6px;border:1px solid var(--line);color:var(--dim)}
+.drawer .panel a:hover{border-color:var(--cyan);color:var(--cyan)}
+.drawer .close{position:absolute;right:18px;top:14px;font-size:20px;color:var(--faint);cursor:pointer}
+
+@media (max-width:940px){ .nav{display:none} .nav-btn{display:block} }
+@media (max-width:860px){
+  .hall{grid-template-columns:1fr;padding:22px 18px 26px;gap:18px}
+  .hall:before{display:none}
+  .mirror{height:230px;max-width:240px}
+}
+@media (max-width:640px){
+  body{font-size:14.5px}
+  .hero{padding:20px 0 4px}
+  .hall{padding:18px 15px 22px}
+  .mirror{height:196px;max-width:206px}
+  .mirror .half b{font-size:27px}
+  .mirror .half small{bottom:20px;font-size:8px;letter-spacing:1.5px}
+  h1{letter-spacing:0;margin-top:12px}
+  h1 small{margin-top:12px}
+  .search{flex-direction:column}
+  .search input{height:46px;text-align:center}
+  .search button{width:100%;height:46px;letter-spacing:4px}
+  .tags{margin-top:22px}
+  .stats{grid-template-columns:repeat(2,1fr);gap:9px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .ph{padding:9px}
+  .ph .t{font-size:15px;letter-spacing:1px}
+  .ph .loc{top:8px;left:8px;font-size:9.5px;padding:2px 7px}
+  .ph .sc{top:8px;right:8px;font-size:11px;padding:2px 7px}
+  .cb{padding:10px 11px 12px}
+  .cb h3{font-size:14.5px}
+  .symbar{height:12px}
+  section{padding:30px 0 0}
+  .sec-head{gap:9px}
+  .kno{font-size:10.5px;padding:5px 13px}
+  h2{font-size:18px;letter-spacing:1px}
+  .sec-head .en{display:none}
+  .log .row{grid-template-columns:70px 1fr auto;gap:10px;padding:11px 13px}
+  .log .row .go{display:none}
+  .pick-item{padding:18px}
+  .rank-item{padding:11px;gap:11px}
+  .rank-item .no{flex:0 0 44px;height:32px;font-size:12.5px}
+  .news .thumb{flex:0 0 44px;height:54px}
+  .feats{grid-template-columns:1fr}
+}
+@media (min-width:1180px){ .grid{grid-template-columns:repeat(6,1fr)} }
+@media (prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important} }
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://www.2828dianyingwang.cn/#website",
+      "url":"https://www.2828dianyingwang.cn/",
+      "name":"2828电影网",
+      "alternateName":"2828影视",
+      "description":"2828电影网每日更新最新电影、热播剧集、动漫、综艺与短剧，提供剧情介绍、片单分区与影视排行榜。",
+      "inLanguage":"zh-CN",
+      "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https://www.2828dianyingwang.cn/?s={search_term_string}",
+        "query-input":"required name=search_term_string"
+      }
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://www.2828dianyingwang.cn/#org",
+      "name":"2828电影网",
+      "url":"https://www.2828dianyingwang.cn/",
+      "logo":"https://www.2828dianyingwang.cn/favicon.ico"
+    },
+    {
+      "@type":"ItemList",
+      "name":"2828电影网热播榜",
+      "itemListOrder":"https://schema.org/ItemListOrderDescending",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"双面镜"},
+        {"@type":"ListItem","position":2,"name":"倒影里的城市"},
+        {"@type":"ListItem","position":3,"name":"对称的午后"},
+        {"@type":"ListItem","position":4,"name":"镜中人"},
+        {"@type":"ListItem","position":5,"name":"第二十八个夜晚"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="topbar">
+  <div class="axisbar" aria-hidden="true"></div>
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="2828电影网首页">
+      <span class="mark" aria-hidden="true"><i></i></span>
+      <span>
+        <b>2828<i>电影网</i></b>
+        <small>MIRROR · 每日更新</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a class="on" href="#">首页</a>
+      <a href="#">最新电影</a>
+      <a href="#">热播剧集</a>
+      <a href="#">动漫</a>
+      <a href="#">综艺</a>
+      <a href="#">短剧</a>
+      <a href="#">排行榜</a>
+      <a href="#">影视资讯</a>
+    </nav>
+    <button class="nav-btn" id="menuBtn" aria-label="打开导航菜单" aria-expanded="false">片单</button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hall">
+      <div>
+        <div class="mir"><i aria-hidden="true"></i>左映右照 · 今日已更新</div>
+        <h1>2828<i>电影网</i><small>电影 · 剧集 · 动漫 · 综艺 · 短剧，左边有，右边也有。</small></h1>
+        <form class="search" id="searchForm" onsubmit="return false;" role="search">
+          <input id="q" type="search" placeholder="输入片名 / 演员 / 类型…" aria-label="搜索影视">
+          <button type="submit" id="searchBtn">搜索</button>
+        </form>
+      </div>
+      <div class="mirror" id="mirror" role="img" aria-label="回文镜图形：金属镜框内由中轴分为左右两半，左侧银白与右侧品红各写一组2828且右侧为镜像翻转，镜面有扫过的高光">
+        <span class="frame" aria-hidden="true"></span>
+        <span class="glass" aria-hidden="true"></span>
+        <span class="axis" aria-hidden="true"></span>
+        <span class="half l" aria-hidden="true"><b>2828</b><small>MIRROR SIDE</small></span>
+        <span class="half r" aria-hidden="true"><b>2828</b><small>MIRROR SIDE</small></span>
+        <span class="cap">PALINDROME · 2828</span>
+      </div>
+    </div>
+    <div class="tags">
+      <a href="#"><s aria-hidden="true"></s>双面镜</a><a href="#"><s aria-hidden="true"></s>倒影里的城市</a>
+      <a href="#"><s aria-hidden="true"></s>对称的午后</a><a href="#"><s aria-hidden="true"></s>镜中人</a>
+      <a href="#"><s aria-hidden="true"></s>第二十八个夜晚</a><a href="#"><s aria-hidden="true"></s>中轴线上</a>
+    </div>
+    <div class="stats">
+      <div><b>46820</b><span>收录影片</span></div>
+      <div><b>1480</b><span>连载剧集</span></div>
+      <div><b>860</b><span>动漫综艺</span></div>
+      <div><b>128</b><span>今日上新</span></div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- 01 镜像推荐 -->
+  <section class="wrap" id="rec">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 01</em><u>/ 09</u></span>
+      <h2>镜像推荐</h2>
+      <span class="en">FEATURED</span>
+      <span class="ln"></span>
+      <a class="more" href="#">查看全部</a>
+    </div>
+    <div class="tabs" id="tabs" role="tablist">
+      <button class="on" data-f="all">全部</button>
+      <button data-f="movie">电影</button>
+      <button data-f="tv">剧集</button>
+      <button data-f="anime">动漫</button>
+      <button data-f="show">综艺</button>
+      <button data-f="short">短剧</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card" data-c="1" data-f="movie" data-t="双面镜 电影 悬疑 镜像">
+        <a href="#">
+          <div class="ph m1" role="img" aria-label="双面镜封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">电影</span><span class="sc">9.2</span><span class="t">双面镜</span></div>
+          <div class="cb"><h3>双面镜</h3><p class="meta">悬疑剧情 · 110分钟</p><p class="note">镜子里那个人，比你先动了一步。</p><div class="foot"><span class="symbar" style="--p:92"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>92</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="2" data-f="tv" data-t="倒影里的城市 剧集 都市">
+        <a href="#">
+          <div class="ph m2" role="img" aria-label="倒影里的城市封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">剧集</span><span class="sc">8.9</span><span class="t">倒影里的城市</span></div>
+          <div class="cb"><h3>倒影里的城市</h3><p class="meta">都市剧集 · 更新至24集</p><p class="note">水面下的那条街，和上面一样亮。</p><div class="foot"><span class="symbar" style="--p:88"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>88</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="3" data-f="movie" data-t="对称的午后 电影 文艺">
+        <a href="#">
+          <div class="ph m3" role="img" aria-label="对称的午后封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">电影</span><span class="sc">9.0</span><span class="t">对称的午后</span></div>
+          <div class="cb"><h3>对称的午后</h3><p class="meta">文艺剧情 · 98分钟</p><p class="note">两个人的下午，折起来刚好重合。</p><div class="foot"><span class="symbar" style="--p:90"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>90</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="4" data-f="anime" data-t="镜中人 动漫 奇幻">
+        <a href="#">
+          <div class="ph m4" role="img" aria-label="镜中人封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">动漫</span><span class="sc">8.7</span><span class="t">镜中人</span></div>
+          <div class="cb"><h3>镜中人</h3><p class="meta">奇幻动画 · 更新至12话</p><p class="note">她每天替我去上班，从不出错。</p><div class="foot"><span class="symbar" style="--p:86"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>86</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="5" data-f="show" data-t="对照观察 综艺 纪实">
+        <a href="#">
+          <div class="ph m5" role="img" aria-label="对照观察封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">综艺</span><span class="sc">8.5</span><span class="t">对照观察</span></div>
+          <div class="cb"><h3>对照观察</h3><p class="meta">纪实综艺 · 更新至16期</p><p class="note">同一件事，两个人讲完像两部片。</p><div class="foot"><span class="symbar" style="--p:82"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>82</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="6" data-f="short" data-t="中轴线上 短剧 都市">
+        <a href="#">
+          <div class="ph m6" role="img" aria-label="中轴线上封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">短剧</span><span class="sc">8.4</span><span class="t">中轴线上</span></div>
+          <div class="cb"><h3>中轴线上</h3><p class="meta">都市短剧 · 全18集</p><p class="note">站到中间，两边都看得清。</p><div class="foot"><span class="symbar" style="--p:80"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>80</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="1" data-f="movie" data-t="第二十八个夜晚 电影 治愈">
+        <a href="#">
+          <div class="ph m1" role="img" aria-label="第二十八个夜晚封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">电影</span><span class="sc">8.6</span><span class="t">第二十八个夜晚</span></div>
+          <div class="cb"><h3>第二十八个夜晚</h3><p class="meta">治愈剧情 · 104分钟</p><p class="note">数到二十八，灯就亮了。</p><div class="foot"><span class="symbar" style="--p:84"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>84</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="2" data-f="tv" data-t="左右为难 剧集 情感">
+        <a href="#">
+          <div class="ph m2" role="img" aria-label="左右为难封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">剧集</span><span class="sc">8.3</span><span class="t">左右为难</span></div>
+          <div class="cb"><h3>左右为难</h3><p class="meta">情感剧集 · 更新至20集</p><p class="note">两条路一样长，只是风景不同。</p><div class="foot"><span class="symbar" style="--p:78"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>78</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="4" data-f="anime" data-t="倒着走的钟 动漫 科幻">
+        <a href="#">
+          <div class="ph m4" role="img" aria-label="倒着走的钟封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">动漫</span><span class="sc">8.2</span><span class="t">倒着走的钟</span></div>
+          <div class="cb"><h3>倒着走的钟</h3><p class="meta">科幻动画 · 更新至14话</p><p class="note">指针往回走，人却往前活。</p><div class="foot"><span class="symbar" style="--p:76"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>76</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="5" data-f="show" data-t="双人对谈 综艺 访谈">
+        <a href="#">
+          <div class="ph m5" role="img" aria-label="双人对谈封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">综艺</span><span class="sc">8.0</span><span class="t">双人对谈</span></div>
+          <div class="cb"><h3>双人对谈</h3><p class="meta">访谈综艺 · 更新至22期</p><p class="note">两个人对坐，话就自己长出来了。</p><div class="foot"><span class="symbar" style="--p:73"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>73</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="6" data-f="short" data-t="照见自己 短剧 温情">
+        <a href="#">
+          <div class="ph m6" role="img" aria-label="照见自己封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">短剧</span><span class="sc">7.9</span><span class="t">照见自己</span></div>
+          <div class="cb"><h3>照见自己</h3><p class="meta">温情短剧 · 全12集</p><p class="note">擦干净镜子，才看清自己。</p><div class="foot"><span class="symbar" style="--p:70"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>70</b></span></div></div>
+        </a>
+      </article>
+      <article class="card" data-c="3" data-f="movie" data-t="玻璃那一边 电影 爱情">
+        <a href="#">
+          <div class="ph m3" role="img" aria-label="玻璃那一边封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="loc">电影</span><span class="sc">8.1</span><span class="t">玻璃那一边</span></div>
+          <div class="cb"><h3>玻璃那一边</h3><p class="meta">爱情剧情 · 94分钟</p><p class="note">只隔一层，却谁也听不见谁。</p><div class="foot"><span class="symbar" style="--p:72"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>72</b></span></div></div>
+        </a>
+      </article>
+    </div>
+    <div class="empty" id="empty">这一侧暂时是空的，换个片名或演员再照一次。</div>
+  </section>
+
+  <!-- 02 今日上新 -->
+  <section class="wrap" id="today">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 02</em><u>/ 09</u></span>
+      <h2>今日上新</h2>
+      <span class="en">NEW TODAY</span>
+      <span class="ln"></span>
+      <a class="more" href="#">上新日历</a>
+    </div>
+    <div class="log">
+      <div class="row"><span class="tm">20:00</span><div class="nm"><strong>倒影里的城市 第24集</strong><span>剧集 · 都市</span></div><span class="tag">今日上新</span><span class="go">查看</span></div>
+      <div class="row"><span class="tm">18:20</span><div class="nm"><strong>镜中人 第12话</strong><span>动漫 · 奇幻</span></div><span class="tag">今日上新</span><span class="go">查看</span></div>
+      <div class="row"><span class="tm">15:40</span><div class="nm"><strong>双面镜 高清版</strong><span>电影 · 悬疑剧情</span></div><span class="tag">今日上新</span><span class="go">查看</span></div>
+      <div class="row"><span class="tm">12:30</span><div class="nm"><strong>对照观察 第16期</strong><span>综艺 · 纪实</span></div><span class="tag">今日上新</span><span class="go">查看</span></div>
+      <div class="row"><span class="tm">10:10</span><div class="nm"><strong>左右为难 第20集</strong><span>剧集 · 情感</span></div><span class="tag">今日上新</span><span class="go">查看</span></div>
+      <div class="row"><span class="tm">08:00</span><div class="nm"><strong>中轴线上 全18集</strong><span>短剧 · 都市</span></div><span class="tag off">已完结</span><span class="go">查看</span></div>
+    </div>
+  </section>
+
+  <!-- 03 对照指南 -->
+  <section class="wrap" id="guide">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 03</em><u>/ 09</u></span>
+      <h2>对照指南</h2>
+      <span class="en">GUIDE</span>
+      <span class="ln"></span>
+      <a class="more" href="#">站点说明</a>
+    </div>
+    <div class="guide">
+      <article class="g-item">
+        <span class="mini" aria-hidden="true"></span><span class="code">M-01</span>
+        <b>左右分区</b>
+        <p>电影、剧集、动漫、综艺、短剧左右对照排布。</p>
+      </article>
+      <article class="g-item">
+        <span class="mini" aria-hidden="true"></span><span class="code">M-02</span>
+        <b>中轴看热度</b>
+        <p>热度条从中轴向两边生长，越长追的人越多。</p>
+      </article>
+      <article class="g-item">
+        <span class="mini" aria-hidden="true"></span><span class="code">M-03</span>
+        <b>三段上新</b>
+        <p>10:10 / 15:40 / 20:00 定时更新，不断片。</p>
+      </article>
+      <article class="g-item">
+        <span class="mini" aria-hidden="true"></span><span class="code">M-04</span>
+        <b>全端适配</b>
+        <ul><li><a href="#">手机观看</a></li><li><a href="#">平板与电脑</a></li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- 04 编辑对照 -->
+  <section class="wrap" id="pick">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 04</em><u>/ 09</u></span>
+      <h2>编辑对照</h2>
+      <span class="en">EDITOR</span>
+      <span class="ln"></span>
+      <a class="more" href="#">全部影评</a>
+    </div>
+    <div class="pick">
+      <article class="pick-item">
+        <span class="k">新片速递</span>
+        <h3>《双面镜》：镜子里那个人先动了一步</h3>
+        <p>节奏克制、画面干净，二刷时会有完全不同的观感。</p>
+        <span class="go">读全文</span>
+      </article>
+      <article class="pick-item">
+        <span class="k">剧集观察</span>
+        <h3>《倒影里的城市》：水下的街和上面一样亮</h3>
+        <p>人物立体、伏笔回收干净，适合一口气追完。</p>
+        <span class="go">读全文</span>
+      </article>
+      <article class="pick-item">
+        <span class="k">深夜推荐</span>
+        <h3>《对称的午后》：折起来刚好重合</h3>
+        <p>镜头耐看、配乐克制，适合熄灯后慢慢看。</p>
+        <span class="go">读全文</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- 05 最新电影 -->
+  <section class="wrap" id="movie">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 05</em><u>/ 09</u></span>
+      <h2>最新电影</h2>
+      <span class="en">MOVIES</span>
+      <span class="ln"></span>
+      <a class="more" href="#">电影库</a>
+    </div>
+    <div class="grid">
+      <article class="card" data-c="1"><a href="#"><div class="ph m1" role="img" aria-label="双面镜封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">9.2</span><span class="t">双面镜</span></div><div class="cb"><h3>双面镜</h3><p class="meta">悬疑剧情 · 110分钟</p><div class="foot"><span class="symbar" style="--p:92"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>92</b></span></div></div></a></article>
+      <article class="card" data-c="3"><a href="#"><div class="ph m3" role="img" aria-label="对称的午后封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">9.0</span><span class="t">对称的午后</span></div><div class="cb"><h3>对称的午后</h3><p class="meta">文艺剧情 · 98分钟</p><div class="foot"><span class="symbar" style="--p:90"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>90</b></span></div></div></a></article>
+      <article class="card" data-c="1"><a href="#"><div class="ph m1" role="img" aria-label="第二十八个夜晚封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.6</span><span class="t">第二十八个夜晚</span></div><div class="cb"><h3>第二十八个夜晚</h3><p class="meta">治愈剧情 · 104分钟</p><div class="foot"><span class="symbar" style="--p:84"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>84</b></span></div></div></a></article>
+      <article class="card" data-c="3"><a href="#"><div class="ph m3" role="img" aria-label="玻璃那一边封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.1</span><span class="t">玻璃那一边</span></div><div class="cb"><h3>玻璃那一边</h3><p class="meta">爱情剧情 · 94分钟</p><div class="foot"><span class="symbar" style="--p:72"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>72</b></span></div></div></a></article>
+      <article class="card" data-c="4"><a href="#"><div class="ph m4" role="img" aria-label="对折的地图封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.3</span><span class="t">对折的地图</span></div><div class="cb"><h3>对折的地图</h3><p class="meta">剧情片 · 102分钟</p><div class="foot"><span class="symbar" style="--p:79"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>79</b></span></div></div></a></article>
+      <article class="card" data-c="6"><a href="#"><div class="ph m6" role="img" aria-label="同侧的手封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">7.9</span><span class="t">同侧的手</span></div><div class="cb"><h3>同侧的手</h3><p class="meta">生活剧情 · 88分钟</p><div class="foot"><span class="symbar" style="--p:68"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>68</b></span></div></div></a></article>
+    </div>
+  </section>
+
+  <!-- 06 热播剧集 -->
+  <section class="wrap" id="tv">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 06</em><u>/ 09</u></span>
+      <h2>热播剧集</h2>
+      <span class="en">SERIES</span>
+      <span class="ln"></span>
+      <a class="more" href="#">剧集库</a>
+    </div>
+    <div class="grid">
+      <article class="card" data-c="2"><a href="#"><div class="ph m2" role="img" aria-label="倒影里的城市封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.9</span><span class="t">倒影里的城市</span></div><div class="cb"><h3>倒影里的城市</h3><p class="meta">都市 · 更新至24集</p><div class="foot"><span class="symbar" style="--p:88"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>88</b></span></div></div></a></article>
+      <article class="card" data-c="2"><a href="#"><div class="ph m2" role="img" aria-label="左右为难封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.3</span><span class="t">左右为难</span></div><div class="cb"><h3>左右为难</h3><p class="meta">情感 · 更新至20集</p><div class="foot"><span class="symbar" style="--p:78"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>78</b></span></div></div></a></article>
+      <article class="card" data-c="4"><a href="#"><div class="ph m4" role="img" aria-label="双侧走廊封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.2</span><span class="t">双侧走廊</span></div><div class="cb"><h3>双侧走廊</h3><p class="meta">都市 · 更新至32集</p><div class="foot"><span class="symbar" style="--p:77"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>77</b></span></div></div></a></article>
+      <article class="card" data-c="5"><a href="#"><div class="ph m5" role="img" aria-label="两把椅子封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.0</span><span class="t">两把椅子</span></div><div class="cb"><h3>两把椅子</h3><p class="meta">家庭 · 更新至28集</p><div class="foot"><span class="symbar" style="--p:74"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>74</b></span></div></div></a></article>
+      <article class="card" data-c="6"><a href="#"><div class="ph m6" role="img" aria-label="隔窗相对封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">7.8</span><span class="t">隔窗相对</span></div><div class="cb"><h3>隔窗相对</h3><p class="meta">青春 · 全24集</p><div class="foot"><span class="symbar" style="--p:67"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>67</b></span></div></div></a></article>
+      <article class="card" data-c="1"><a href="#"><div class="ph m1" role="img" aria-label="对称的钟点封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.4</span><span class="t">对称的钟点</span></div><div class="cb"><h3>对称的钟点</h3><p class="meta">生活 · 更新至16集</p><div class="foot"><span class="symbar" style="--p:81"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>81</b></span></div></div></a></article>
+    </div>
+  </section>
+
+  <!-- 07 动漫综艺短剧 -->
+  <section class="wrap" id="more">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 07</em><u>/ 09</u></span>
+      <h2>动漫 · 综艺 · 短剧</h2>
+      <span class="en">ANIME / SHOW / SHORT</span>
+      <span class="ln"></span>
+      <a class="more" href="#">进入专区</a>
+    </div>
+    <div class="grid">
+      <article class="card" data-c="4"><a href="#"><div class="ph m4" role="img" aria-label="镜中人封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.7</span><span class="t">镜中人</span></div><div class="cb"><h3>镜中人</h3><p class="meta">动漫 · 奇幻</p><div class="foot"><span class="symbar" style="--p:86"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>86</b></span></div></div></a></article>
+      <article class="card" data-c="4"><a href="#"><div class="ph m4" role="img" aria-label="倒着走的钟封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.2</span><span class="t">倒着走的钟</span></div><div class="cb"><h3>倒着走的钟</h3><p class="meta">动漫 · 科幻</p><div class="foot"><span class="symbar" style="--p:76"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>76</b></span></div></div></a></article>
+      <article class="card" data-c="5"><a href="#"><div class="ph m5" role="img" aria-label="对照观察封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.5</span><span class="t">对照观察</span></div><div class="cb"><h3>对照观察</h3><p class="meta">综艺 · 纪实</p><div class="foot"><span class="symbar" style="--p:82"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>82</b></span></div></div></a></article>
+      <article class="card" data-c="5"><a href="#"><div class="ph m5" role="img" aria-label="双人对谈封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.0</span><span class="t">双人对谈</span></div><div class="cb"><h3>双人对谈</h3><p class="meta">综艺 · 访谈</p><div class="foot"><span class="symbar" style="--p:73"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>73</b></span></div></div></a></article>
+      <article class="card" data-c="6"><a href="#"><div class="ph m6" role="img" aria-label="中轴线上封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">8.4</span><span class="t">中轴线上</span></div><div class="cb"><h3>中轴线上</h3><p class="meta">短剧 · 都市</p><div class="foot"><span class="symbar" style="--p:80"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>80</b></span></div></div></a></article>
+      <article class="card" data-c="6"><a href="#"><div class="ph m6" role="img" aria-label="照见自己封面"><span class="sym" aria-hidden="true"></span><span class="ax" aria-hidden="true"></span><span class="halo" aria-hidden="true"></span><span class="sc">7.9</span><span class="t">照见自己</span></div><div class="cb"><h3>照见自己</h3><p class="meta">短剧 · 温情</p><div class="foot"><span class="symbar" style="--p:70"><span class="fill" aria-hidden="true"></span></span><span class="heat">热度 <b>70</b></span></div></div></a></article>
+    </div>
+  </section>
+
+  <!-- 08 排行榜 -->
+  <section class="wrap" id="rank">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 08</em><u>/ 09</u></span>
+      <h2>2828电影网排行榜</h2>
+      <span class="en">TOP 6</span>
+      <span class="ln"></span>
+      <a class="more" href="#">完整榜单</a>
+    </div>
+    <div class="rank">
+      <div class="rank-item"><span class="no" data-n="01"><span>01</span></span><div class="info"><strong>双面镜</strong><span>悬疑剧情 · 电影</span></div><div class="hot"><b>118.9万</b><i>人气</i></div></div>
+      <div class="rank-item"><span class="no" data-n="02"><span>02</span></span><div class="info"><strong>对称的午后</strong><span>文艺剧情 · 电影</span></div><div class="hot"><b>110.5万</b><i>人气</i></div></div>
+      <div class="rank-item"><span class="no" data-n="03"><span>03</span></span><div class="info"><strong>倒影里的城市</strong><span>都市 · 剧集</span></div><div class="hot"><b>103.4万</b><i>人气</i></div></div>
+      <div class="rank-item"><span class="no" data-n="04"><span>04</span></span><div class="info"><strong>镜中人</strong><span>奇幻 · 动漫</span></div><div class="hot"><b>95.9万</b><i>人气</i></div></div>
+      <div class="rank-item"><span class="no" data-n="05"><span>05</span></span><div class="info"><strong>对照观察</strong><span>纪实 · 综艺</span></div><div class="hot"><b>88.6万</b><i>人气</i></div></div>
+      <div class="rank-item"><span class="no" data-n="06"><span>06</span></span><div class="info"><strong>中轴线上</strong><span>都市 · 短剧</span></div><div class="hot"><b>80.7万</b><i>人气</i></div></div>
+    </div>
+  </section>
+
+  <!-- 09 影视资讯 -->
+  <section class="wrap" id="news">
+    <div class="sec-head">
+      <span class="kno"><span class="mini" aria-hidden="true"></span><em>映区 09</em><u>/ 09</u></span>
+      <h2>影视资讯</h2>
+      <span class="en">NEWS</span>
+      <span class="ln"></span>
+      <a class="more" href="#">资讯频道</a>
+    </div>
+    <div class="news">
+      <a href="#"><span class="thumb" aria-hidden="true"></span><div><h3>《双面镜》上线首周登顶新片榜</h3><p>镜像构图被评价为年度最佳镜头设计</p><time datetime="2026-09-26">2026-09-26</time></div></a>
+      <a href="#"><span class="thumb" aria-hidden="true"></span><div><h3>《倒影里的城市》收官，伏笔回收获好评</h3><p>双线叙事与人物刻画都被点赞</p><time datetime="2026-09-24">2026-09-24</time></div></a>
+      <a href="#"><span class="thumb" aria-hidden="true"></span><div><h3>《镜中人》第二季公布先导海报</h3><p>新增两位角色，世界观继续扩大</p><time datetime="2026-09-21">2026-09-21</time></div></a>
+      <a href="#"><span class="thumb" aria-hidden="true"></span><div><h3>档期观察：小体量作品正在回温</h3><p>观众节奏变化，短剧与文艺片更受关注</p><time datetime="2026-09-18">2026-09-18</time></div></a>
+    </div>
+    <div class="feats">
+      <div class="feat"><b>左右分区</b><p>电影剧集动漫综艺短剧左右对照。</p></div>
+      <div class="feat"><b>全端适配</b><p>手机、平板、电脑自动排版。</p></div>
+      <div class="feat"><b>中轴热度</b><p>热度条从中轴生长，越长越热。</p></div>
+      <div class="feat"><b>每日上新</b><p>三段时段更新，全天不断片。</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <b>2828<i>电影网</i></b>
+      <p>https://www.2828dianyingwang.cn</p>
+    </div>
+    <div class="f-cols">
+      <div>
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#">网站简介</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">免责声明</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>影视分类</h4>
+        <ul>
+          <li><a href="#">最新电影</a></li>
+          <li><a href="#">热播剧集</a></li>
+          <li><a href="#">动漫</a></li>
+          <li><a href="#">综艺</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>题材标签</h4>
+        <ul>
+          <li><a href="#">悬疑剧情</a></li>
+          <li><a href="#">都市生活</a></li>
+          <li><a href="#">都市短剧</a></li>
+          <li><a href="#">纪实访谈</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>热门入口</h4>
+        <ul>
+          <li><a href="#">影视排行榜</a></li>
+          <li><a href="#">编辑对照</a></li>
+          <li><a href="#">今日上新</a></li>
+          <li><a href="#">影视资讯</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:13.5px;color:var(--dim);padding-bottom:10px;max-width:820px">
+      2828电影网（2828dianyingwang.cn）致力于为用户提供电影、剧集、动漫、综艺与短剧的剧情介绍与在线观看导航服务，每日更新，本站仅提供信息索引，不存储任何影视资源。
+    </p>
+    <div class="f-bottom">
+      <p><a href="#">网站地图</a> · <a href="#">标签云</a> · <a href="#">留言反馈</a> · <a href="#">隐私政策</a></p>
+      <p>© 2026 2828电影网 2828dianyingwang.cn　本站内页链接均为演示占位</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部">↑</button>
+
+<div class="drawer" id="drawer">
+  <div class="panel">
+    <span class="close" id="closeDrawer" aria-label="关闭菜单">✕</span>
+    <h4>站内导航</h4>
+    <a href="#">首页</a><a href="#">最新电影</a><a href="#">热播剧集</a><a href="#">动漫</a>
+    <a href="#">综艺</a><a href="#">短剧</a><a href="#">排行榜</a><a href="#">影视资讯</a>
+    <h4>快捷入口</h4>
+    <a href="#today">今日上新</a><a href="#guide">对照指南</a><a href="#rank">人气排行榜</a><a href="#">登录 / 注册</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#grid .card'));
+  var tabs  = document.querySelectorAll('#tabs button');
+  var empty = document.getElementById('empty');
+  var q     = document.getElementById('q');
+
+  function apply(){
+    var kw = (q.value || '').trim().toLowerCase();
+    var f  = document.querySelector('#tabs button.on').getAttribute('data-f');
+    var n  = 0;
+    cards.forEach(function(c){
+      var okF = (f === 'all') || (c.getAttribute('data-f') === f);
+      var t   = (c.getAttribute('data-t') || '') + ' ' + c.querySelector('h3').textContent;
+      var okK = !kw || t.toLowerCase().indexOf(kw) > -1;
+      var ok  = okF && okK;
+      c.classList.toggle('hide', !ok);
+      if(ok) n++;
+    });
+    empty.classList.toggle('show', n === 0);
+  }
+  tabs.forEach(function(b){
+    b.addEventListener('click', function(){
+      tabs.forEach(function(x){ x.classList.remove('on'); });
+      b.classList.add('on'); apply();
+    });
+  });
+  q.addEventListener('input', apply);
+  document.getElementById('searchBtn').addEventListener('click', apply);
+  document.getElementById('searchForm').addEventListener('submit', function(e){ e.preventDefault(); apply(); });
+
+  var drawer = document.getElementById('drawer');
+  document.getElementById('menuBtn').addEventListener('click', function(){
+    drawer.classList.add('open'); this.setAttribute('aria-expanded','true');
+  });
+  document.getElementById('closeDrawer').addEventListener('click', function(){ drawer.classList.remove('open'); });
+  drawer.addEventListener('click', function(e){ if(e.target === drawer) drawer.classList.remove('open'); });
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){ toTop.classList.toggle('show', window.scrollY > 400); }, {passive:true});
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+
+  var links = document.querySelectorAll('.nav a');
+  links.forEach(function(a){
+    a.addEventListener('click', function(){
+      links.forEach(function(x){ x.classList.remove('on'); });
+      a.classList.add('on');
+    });
+  });
+})();
+</script>
+</body>
+</html>
